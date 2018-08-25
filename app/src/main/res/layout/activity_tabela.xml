@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.patricia.fifafriends.TabelaActivity">
+
+    <LinearLayout
+        android:id="@+id/LayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:adjustViewBounds="false"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/logo" />
+
+        <ListView
+            android:id="@+id/ListTT"
+            android:layout_width="match_parent"
+            android:layout_height="328dp" />
+
+        <Button
+            android:id="@+id/btnSairTT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAIR" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
